@@ -5,14 +5,16 @@ using UnityEngine;
 public class HealthBehaviour : MonoBehaviour
 {
     [SerializeField]
-    private float _health; 
+    private float _health;
+    private float _maxHealth;
+
+    private void Start()
+    {
+    }
 
     public float Health
     {
-        get
-        {
-            return _health;
-        }
+        get { return _health; }
     }
 
     /// <summary>
